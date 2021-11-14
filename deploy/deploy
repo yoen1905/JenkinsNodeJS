@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh ubuntu@3.34.215.88 <<EOF
+    cd ~/JenkinsNodeJS
+    git pull 
+    npm install
+    npm start
+    exit
+EOF
