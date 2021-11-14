@@ -6,7 +6,9 @@ ssh ubuntu@3.34.215.88 <<EOF
     . ~/.nvm/nvm.sh 
     nvm install 16.2.0
     npm install
-    npm start
+    npm install -g pm2
+    pm2 install typescript
+    pm2 restart ecosystem.config.js
     exit
 EOF
 
